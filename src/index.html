@@ -6,67 +6,193 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"/>
 </head>
 <body>
 
 <div class="uk-offcanvas-content">
-    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
-        <div>
-
-            <!--Header-->
-            <header class="uk-navbar-container uk-position-relative">
+    <div id="fullpage" class="uk-height-viewport uk-position-relative">
+        <!--Header-->
+        <header class="uk-navbar-container uk-width-expand uk-navbar-transparent">
+            <div class="uk-container uk-position-relative">
                 <nav uk-navbar>
                     <div class="uk-navbar-left">
 
                         <!--mobile menu toggle-->
-                        <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@l"
+                        <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@s"
                            uk-navbar-toggle-icon uk-toggle></a>
 
                         <!--logo-->
                         <a class="uk-navbar-item uk-logo" href="/">
-                            <img src="images/logo_tourweek.png" alt="">
+                            <img src="images/logo.png" alt="">
                         </a>
-
-                        <!--navbar menu-->
-                        <ul class="uk-navbar-nav uk-visible@l">
-                            <li><a href="#"></a></li>
-                            <li>
-                                <a href="#"></a>
-
-                                <div class="uk-navbar-dropdown"
-                                     uk-drop="mode: click; boundary: !header; boundary-align: true; pos: bottom-justify;">
-                                    <div class="uk-container">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav uk-column-1-4">
-                                            <li><a href="#"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
 
                     </div>
 
-                    <div class="uk-navbar-center uk-visible@l"></div>
-
-                    <div class="uk-navbar-right"></div>
+                    <div class="uk-navbar-right">
+                        <!--navbar menu-->
+                        <ul class="uk-navbar-nav uk-visible@l">
+                            <li><a href="#">О группе</a></li>
+                            <li><a href="#">Шоу</a></li>
+                            <li><a href="#">Магазин</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <div class="uk-navbar-item">
+                            <button class="uk-button uk-button-primary">Купить билет</button>
+                        </div>
+                        <div class="uk-navbar-item">
+                            <div class="tm-lang-switch">
+                                <a href="#">rus</a>
+                                <a href="#">eng</a>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
-            </header>
+            </div>
+        </header>
 
-            <!-- Section -->
-            <div class="uk-section">
-                <div class="uk-container">
+        <aside class="tm-side-controls">
+            <div class="tm-dot-control"></div>
+            <div class="tm-dot-control"></div>
+            <div class="tm-dot-control"></div>
+            <div class="tm-dot-control"></div>
+            <div class="tm-dot-control"></div>
+        </aside>
 
+        <!-- Section -->
+        <div class="section tm-section-full">
+            <div class="uk-container uk-flex uk-flex-middle">
+                <div class="uk-width-2-5 tm-flex-self-bottom">
+                    <img src="images/img-one.png" alt="">
+                </div>
+                <div class="uk-width-3-5">
+                    <div class="uk-margin-large-bottom">
+                        <h4 class="uk-margin-small-left">Шоу-спектакль</h4>
+                        <div class="uk-h1"><span class="tm-text-marked-secondary">Море</span></div>
+                        <div class="uk-h1"><span class="tm-text-marked-secondary">Синего</span> 20</div>
+                        <div class="uk-h1"><span class="tm-text-marked-secondary">Леса</span> ноября</div>
+                    </div>
+                    <div class="uk-child-width-1-2" data-uk-grid>
+                        <div>
+                            <a class="uk-h3 uk-link-reset">
+                                Подробнее <br/>о шоу
+                            </a>
+                        </div>
+                        <div class="uk-text-primary">
+                            <a class="uk-h3 uk-link-reset">
+                                Купить <br/>билет
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
+        <div class="section tm-section-full">
+            <div class="uk-container uk-flex uk-flex-middle">
+                <div class="tm-scroll-wrap uk-width-3-5">
+                    <div class="tm-scrollable">
+                        <div class="uk-margin-large-bottom">
+                            <div class="uk-h1">Единственное</div>
+                            <div class="uk-h1">В России</div>
+                            <div class="uk-h1"><span class="tm-text-marked-primary">Японское</span></div>
+                            <div class="uk-h1"><span class="tm-text-marked-primary">Барабанное</span></div>
+                            <div class="uk-h1"><span class="tm-text-marked-primary">Шоу</span></div>
+                        </div>
+                        <div>
+                            <h5>ДОБРО ПОЖАЛОВАТЬ <br/>
+                                НА ШОУ TAIKO IN-SPIRATION!
+                            </h5>
+                            <p>
+                                Мы радуем вас нашим творчеством уже 8 лет. В нашем репертуаре по-настоящему “ударные”
+                                фестивальные композиции и современные барабанные ритмы. Этническая музыка, традиционные
+                                костюмы и народные танцы погружают наших зрителей в атмосферу таинственной Японии и
+                                заставляют сердца биться в такт барабанов!
+                            </p>
+                            <p>
+                                Cовсем скоро состоится премьера
+                                нашего первого большого шоу всесте с известным японским барабанщиком Takuya Taniguchi!
+                            </p>
+                        </div>
+                    </div>
 
-        <!--Footer-->
-        <footer class="uk-section">
-            <div class="uk-container">
+                </div>
+                <div class="tm-flex-self-bottom uk-width-2-5">
+                    <img src="images/img-two.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section tm-section-full">
+            <div class="uk-container uk-flex uk-flex-middle">
+                <div class="tm-height-4-5 uk-width-2-3">
+                    <div class="uk-margin-medium-bottom">
+                        <div class="uk-h1"><span class="tm-text-marked-primary">Видео</span></div>
+                        <div class="uk-h1"><span class="tm-text-marked-primary">С выступлений</span></div>
+                    </div>
+                    <div class="tm-video-cover uk-width-1-1 uk-cover-container">
+                        <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" muted playsinline
+                               data-uk-cover></video>
+                    </div>
+                </div>
+                <div class="uk-width-1-3 tm-flex-self-bottom">
+                    <img src="images/img-three.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section tm-section-full">
+            <div class="uk-container uk-flex uk-flex-middle">
+                <div class="uk-grid-large uk-width-expand" data-uk-grid>
+                    <div class="uk-width-2-3 uk-margin-bottom">
+                        <div>
+                            <h4 class="uk-margin-small-left">Шоу-спектакль</h4>
+                            <div class="uk-h1"><span class="tm-text-marked-primary">Море</span></div>
+                            <div class="uk-h1"><span class="tm-text-marked-primary">Синего</span> 20</div>
+                            <div class="uk-h1"><span class="tm-text-marked-primary">Леса</span> ноября</div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-3 uk-flex uk-flex-column uk-flex-between uk-margin-bottom">
+
+                        <div class="uk-padding">
+                            <a class="uk-h3 uk-link-reset">
+                                Подробнее <br/>о шоу
+                            </a>
+                        </div>
+                        <div class="uk-text-primary uk-padding">
+                            <a class="uk-h3 uk-link-reset">
+                                Купить <br/>билет
+                            </a>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-1 uk-flex uk-flex-between uk-text-center">
+                        <div>
+                            <div class="tm-timer-cell">
+                                180
+                            </div>
+                            <div class="tm-timer-text">Дней</div>
+                        </div>
+                        <div>
+                            <div class="tm-timer-cell">
+                                23
+                            </div>
+                            <div class="tm-timer-text">Часов</div>
+                        </div>
+                        <div>
+                            <div class="tm-timer-cell">
+                                59
+                            </div>
+                            <div class="tm-timer-text">Минут</div>
+                        </div>
+                        <div>
+                            <div class="tm-timer-cell">
+                                43
+                            </div>
+                            <div class="tm-timer-text">Секунд</div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-        </footer>
+        </div>
     </div>
 
     <!-- Off-canvas -->
@@ -84,5 +210,25 @@
 
 </div>
 
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<!--This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+
+<!--<script src="scripts/jquery.scrollify.js"></script>-->
+<!--<script>-->
+<!--$(document).ready(function() {-->
+<!--$.scrollify({-->
+<!--section : ".section",-->
+<!--});-->
+<!--});-->
+<!--</script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1.0.17/jquery.scrollify.min.js"></script>-->
 </body>
 </html>

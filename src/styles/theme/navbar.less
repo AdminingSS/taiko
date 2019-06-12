@@ -11,9 +11,9 @@
 @navbar-color-mode:                             none;
 
 @navbar-nav-item-height:                        80px;
-@navbar-nav-item-padding-horizontal:            15px;
-@navbar-nav-item-color:                         @global-muted-color;
-@navbar-nav-item-font-size:                     @global-font-size;
+@navbar-nav-item-padding-horizontal:            25px;
+@navbar-nav-item-color:                         @global-color;
+@navbar-nav-item-font-size:                     @global-small-font-size;
 @navbar-nav-item-font-family:                   @global-font-family;
 @navbar-nav-item-hover-color:                   @global-color;
 @navbar-nav-item-onclick-color:                 @global-emphasis-color;
@@ -70,7 +70,9 @@
 // Component
 // ========================================================================
 
-.hook-navbar() {}
+.hook-navbar() {
+  line-height: 1;
+}
 
 
 // Container
@@ -86,6 +88,7 @@
     text-transform: @navbar-nav-item-text-transform;
     transition: 0.1s ease-in-out;
     transition-property: color, background-color;
+  font-weight: 900;
 }
 
 .hook-navbar-nav-item-hover() {}
