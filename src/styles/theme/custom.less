@@ -3,8 +3,29 @@ header {
   top: 40px;
 }
 
+footer {
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: #212121;
+  padding: 85px 160px;
+
+  > * {
+    margin-bottom: 85px;
+  }
+}
+
 .tm-section-full {
   height: 100vh;
+  box-sizing: border-box;
+  //padding-top: 120px;
+
+  > * {
+    height: 100%;
+  }
+}
+
+.tm-section-long {
+  height: calc(100vh - 120px);
   box-sizing: border-box;
   //padding-top: 120px;
 
@@ -33,6 +54,7 @@ header {
   transform: translateY(-50%);
 
   .tm-dot-control {
+    display: block;
     width: 20px;
     height: 20px;
     background-color: #818181;
@@ -41,7 +63,7 @@ header {
     margin-bottom: 40px;
     background-clip: content-box;
 
-    &:hover, &:active {
+    &:hover, &:active, &.active {
       background-color: transparent;
       border-color: #818181;
     }
@@ -103,5 +125,15 @@ header {
 .tm-timer-text {
   font-size: @global-medium-font-size;
   text-transform: uppercase;
+  font-weight: 900;
+}
+
+.tm-video-more {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+
+.tm-text-fat {
   font-weight: 900;
 }

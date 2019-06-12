@@ -9,7 +9,7 @@
 
 @subnav-margin-horizontal:                      20px;
 
-@subnav-item-color:                             @global-muted-color;
+@subnav-item-color:                             @global-color;
 @subnav-item-hover-color:                       @global-color;
 @subnav-item-hover-text-decoration:             none;
 @subnav-item-active-color:                      @global-emphasis-color;
@@ -37,14 +37,16 @@
 // New
 //
 
-@subnav-item-font-size:                         @global-small-font-size;
+@subnav-item-font-size:                         @global-medium-font-size;
 @subnav-item-text-transform:                    uppercase;
 
 
 // Component
 // ========================================================================
 
-.hook-subnav() {}
+.hook-subnav() {
+  margin-bottom: 0;
+}
 
 .hook-subnav-item() {
     font-size: @subnav-item-font-size;

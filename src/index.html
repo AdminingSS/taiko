@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
 
@@ -52,21 +53,21 @@
             </div>
         </header>
 
-        <aside class="tm-side-controls">
-            <div class="tm-dot-control"></div>
-            <div class="tm-dot-control"></div>
-            <div class="tm-dot-control"></div>
-            <div class="tm-dot-control"></div>
-            <div class="tm-dot-control"></div>
+        <aside id="controls" class="tm-side-controls">
+            <a data-menuanchor="one" href="#one" class="tm-dot-control"></a>
+            <a data-menuanchor="two" href="#two" class="tm-dot-control"></a>
+            <a data-menuanchor="three" href="#three" class="tm-dot-control"></a>
+            <a data-menuanchor="four" href="#four" class="tm-dot-control"></a>
+            <a data-menuanchor="five" href="#five" class="tm-dot-control"></a>
         </aside>
 
         <!-- Section -->
-        <div class="section tm-section-full">
+        <div data-anchor="one" class="section tm-section-full">
             <div class="uk-container uk-flex uk-flex-middle">
-                <div class="uk-width-2-5 tm-flex-self-bottom">
-                    <img src="images/img-one.png" alt="">
+                <div class="uk-width-2-5 tm-flex-self-bottom animated slideInLeft delay-1s">
+                    <img data-src="images/img-one.png" alt="">
                 </div>
-                <div class="uk-width-3-5">
+                <div class="uk-width-3-5 animated slideInRight delay-1s">
                     <div class="uk-margin-large-bottom">
                         <h4 class="uk-margin-small-left">Шоу-спектакль</h4>
                         <div class="uk-h1"><span class="tm-text-marked-secondary">Море</span></div>
@@ -88,10 +89,10 @@
                 </div>
             </div>
         </div>
-        <div class="section tm-section-full">
+        <div data-anchor="two" class="section tm-section-full">
             <div class="uk-container uk-flex uk-flex-middle">
                 <div class="tm-scroll-wrap uk-width-3-5">
-                    <div class="tm-scrollable">
+                    <div class="tm-scrollable animated slideInLeft delay-1s">
                         <div class="uk-margin-large-bottom">
                             <div class="uk-h1">Единственное</div>
                             <div class="uk-h1">В России</div>
@@ -117,12 +118,12 @@
                     </div>
 
                 </div>
-                <div class="tm-flex-self-bottom uk-width-2-5">
-                    <img src="images/img-two.png" alt="">
+                <div class="tm-flex-self-bottom uk-width-2-5 animated slideInLeft delay-2s">
+                    <img data-src="images/img-two.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="section tm-section-full">
+        <div data-anchor="three" class="section tm-section-full">
             <div class="uk-container uk-flex uk-flex-middle">
                 <div class="tm-height-4-5 uk-width-2-3">
                     <div class="uk-margin-medium-bottom">
@@ -130,16 +131,21 @@
                         <div class="uk-h1"><span class="tm-text-marked-primary">С выступлений</span></div>
                     </div>
                     <div class="tm-video-cover uk-width-1-1 uk-cover-container">
-                        <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" muted playsinline
+                        <video data-src="https://yootheme.com/site/images/media/yootheme-pro.mp4" muted playsinline
                                data-uk-cover></video>
+                    </div>
+                    <div class="tm-video-more">
+                        <a class="uk-h3 uk-link-reset">
+                            Больше <br/>видео
+                        </a>
                     </div>
                 </div>
                 <div class="uk-width-1-3 tm-flex-self-bottom">
-                    <img src="images/img-three.png" alt="">
+                    <img data-src="images/img-three.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="section tm-section-full">
+        <div data-anchor="four" class="section tm-section-full">
             <div class="uk-container uk-flex uk-flex-middle">
                 <div class="uk-grid-large uk-width-expand" data-uk-grid>
                     <div class="uk-width-2-3 uk-margin-bottom">
@@ -163,7 +169,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="uk-width-1-1 uk-flex uk-flex-between uk-text-center">
+                    <div class="tm-timer uk-width-1-1 uk-flex uk-flex-between uk-text-center">
                         <div>
                             <div class="tm-timer-cell">
                                 180
@@ -193,6 +199,73 @@
 
             </div>
         </div>
+        <div data-anchor="five" class="section ">
+            <div class="tm-section-long">
+                <div class="uk-container uk-flex uk-flex-middle">
+                    <div class="uk-grid-large uk-width-expand uk-flex-middle" data-uk-grid>
+                        <div class="uk-width-2-3 uk-margin-bottom">
+                            <div class="uk-h1"><span class="tm-text-marked-primary">Магазин</span></div>
+                        </div>
+                        <div class="uk-width-1-3 uk-margin-bottom">
+
+                            <div class="">
+                                <a class="uk-h3 uk-link-reset">
+                                    Больше <br/>товаров
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="uk-width-1-1 uk-child-width-1-3 uk-grid-medium" uk-grid>
+                            <div>
+                                <img data-src="images/item-1.png" alt="">
+                            </div>
+                            <div>
+                                <img data-src="images/item-2.png" alt="">
+                            </div>
+                            <div>
+                                <img data-src="images/item-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <footer class="uk-container uk-child-width-1-1">
+                <div class="uk-flex uk-flex-center">
+                    <ul class="uk-subnav uk-text-bold">
+                        <li><a href="#">О ГРУППЕ</a></li>
+                        <li><a href="#">ШОУ</a></li>
+                        <li><a href="#">МАГАЗИН</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+                <div class="uk-flex uk-flex-between">
+                    <div>
+                        <div class="tm-text-fat">ПО ВСЕМ ВОПРОСАМ</div>
+                        <div>8 919 999-48-58</div>
+                        <div>INFO@TAIKO.MOSCOW</div>
+                    </div>
+                    <div class="uk-text-center">
+                        <div>ЯПОНСКОЕ</div>
+                        <div>БАРАБАННОЕ ШОУ</div>
+                        <div>TAIKO in-SPIRATION © 2019</div>
+                    </div>
+                    <div class="uk-text-right">
+                        <div class="tm-text-fat">ИП Бахтеров А.А.</div>
+                        <div>ИНН 772646088712</div>
+                        <div>ОГРНИП 316774600263940</div>
+                    </div>
+                </div>
+                <div class="uk-flex uk-flex-center">
+                    <ul class="uk-subnav uk-text-bold uk-text-primary">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">youtube</a></li>
+                        <li><a href="#">FAcebook</a></li>
+                        <li><a href="#">vKontakte</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </div>
 
     <!-- Off-canvas -->
@@ -217,9 +290,10 @@
 <!--This following line is only necessary in the case of using the option `scrollOverflow:true` -->
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
+<!--<script type="text/javascript" src="https://alvarotrigo.com/fullPage/fullpage.scrollOverflowReset.limited.min.js"></script>-->
 
 <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
 
 <!--<script src="scripts/jquery.scrollify.js"></script>-->
 <!--<script>-->
