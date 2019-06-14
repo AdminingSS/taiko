@@ -1,19 +1,19 @@
 $(document).ready(function() {
-    $('#fullpage').fullpage({
+
+    const $fullpage = $('#fullpage');
+    const options = {
         normalScrollElements: '.tm-scrollable',
         verticalCentered: false,
         fitToSection: false,
-        paddingTop: '120px',
+        paddingTop: '140px',
         fixedElements: 'header, aside',
         scrollOverflow: true,
-        scrollOverflowReset: true,
         menu: '#controls',
-        normalScrollElementTouchThreshold: 3
+        normalScrollElementTouchThreshold: 3,
+        responsiveWidth: 960,
+        responsiveHeight: 600
+    };
 
-        //options here
-        //autoScrolling:false
-        //scrollHorizontally: true
-    });
-
-    //$.fn.fullpage.setAllowScrolling(false);
+    $fullpage.fullpage(options);
+    $.fn.fullpage.setAllowScrolling(true);
 });
