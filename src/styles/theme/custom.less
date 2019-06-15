@@ -186,6 +186,71 @@ img.tm-img-main {
   font-weight: 900;
 }
 
+.tm-right-side {
+  padding-right: 40px;
+  text-align: right;
+}
+
+.tm-text-secondary {
+  color: @global-secondary-background;
+}
+
+.tm-margin-large-bottom {
+  margin-bottom: 80px;
+}
+
+.tm-margin-medium-bottom {
+  margin-bottom: 35px;
+}
+
+.slick-arrow {
+  position: absolute;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  top: 50%;
+  transform: translateY(-75%);
+  z-index: 5000;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover::before {
+    color: #3287B9;
+  }
+}
+
+.slick-prev {
+  left: -70px;
+}
+
+.slick-next {
+  right: -70px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 90px;
+  line-height: 1;
+  color: #2980b9;
+  font-weight: 900;
+}
+
+.slick-prev:before {
+  content: '\f053';
+}
+
+.slick-next:before {
+  content: '\f054';
+}
+
+.tm-timer-blue {
+  .tm-timer-cell {
+    background-color: @global-secondary-background;
+  }
+}
+
 //media
 @media (max-height: 899px) , (max-width: 1649px) {
 
