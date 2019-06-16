@@ -292,6 +292,10 @@ img.tm-img-main {
   }
 }
 
+.slick-slide img {
+  max-height: 50vh;
+}
+
 //media
 @media (max-height: 899px) {
   .tm-h1-small {
@@ -343,6 +347,11 @@ img.tm-img-main {
   .tm-video-cover video {
     max-height: 55vh;
   }
+
+  .tm-img-item {
+    max-width: 300px;
+  }
+
 
   //.tm-timer-cell {
   //  width: 180px;
@@ -416,6 +425,10 @@ img.tm-img-main {
   .uk-subnav > * > :first-child {
     font-size: 22px;
   }
+
+  h1, .uk-h1 {
+    font-size: 50px;
+  }
 }
 
 @media (max-height: 750px) {
@@ -440,6 +453,10 @@ img.tm-img-main {
 
   .tm-timer-text {
     font-size: 18px;
+  }
+
+  footer .uk-container > * {
+    margin-bottom: 33px;
   }
 }
 
@@ -536,6 +553,10 @@ img.tm-img-main {
   .uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
     padding: 0 20px;
   }
+
+  .tm-h1-small {
+    font-size: 46px;
+  }
 }
 
 @media (max-width: 959px) {
@@ -544,7 +565,7 @@ img.tm-img-main {
   }
 
   h1, .uk-h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   h3, .uk-h3 {
@@ -653,11 +674,18 @@ img.tm-img-main {
   .uk-text-small {
     font-size: 12px;
   }
+
+  .tm-list-actors {
+    li {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+  }
 }
 
 @media (max-width: 734px) {
   h1, .uk-h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   h3, .uk-h3 {
@@ -735,5 +763,19 @@ img.tm-img-main {
 
   .tm-timer-separator {
     padding-bottom: 30px;
+  }
+
+  .tm-list-actors {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .tm-h1-small {
+    font-size: 16px;
+  }
+
+  .tm-list-actors li {
+    font-size: 14px;
   }
 }
