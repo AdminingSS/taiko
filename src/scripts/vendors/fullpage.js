@@ -7,7 +7,7 @@ $(document).ready(function() {
         fitToSection: false,
         paddingTop: '140px',
         fixedElements: 'header, aside',
-        scrollOverflow: true,
+        //scrollOverflow: true,
         menu: '#controls',
         normalScrollElementTouchThreshold: 3,
         responsiveWidth: 960,
