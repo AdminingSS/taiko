@@ -28,10 +28,10 @@
 
 @button-primary-background:                     @global-primary-background;
 @button-primary-color:                          @global-inverse-color;
-@button-primary-hover-background:               darken(@button-primary-background, 5%);
-@button-primary-hover-color:                    @global-inverse-color;
-@button-primary-active-background:              darken(@button-primary-background, 10%);
-@button-primary-active-color:                   @global-inverse-color;
+@button-primary-hover-background:               #ffffff;
+@button-primary-hover-color:                    @global-primary-background;
+@button-primary-active-background:              #ffffff;
+@button-primary-active-color:                   @global-primary-background;
 
 @button-secondary-background:                   @global-secondary-background;
 @button-secondary-color:                        @global-inverse-color;
@@ -84,7 +84,7 @@
 
 .hook-button() {
     text-transform: @button-text-transform;
-    transition: 0.1s ease-in-out;
+    transition: 0.5s ease-in-out;
     transition-property: color, background-color, border-color;
   font-weight: 900;
 }

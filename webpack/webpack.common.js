@@ -35,6 +35,11 @@ module.exports = {
             filename: "show.html",
             inject: "body",
         }),
+        new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/about.html'),
+            filename: "about.html",
+            inject: "body",
+        }),
         // new webpack.ProvidePlugin({
         //     $: 'jquery',
         //     jQuery: 'jquery'
