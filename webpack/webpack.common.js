@@ -31,13 +31,38 @@ module.exports = {
             inject: "body",
         }),
         new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/index_eng.html'),
+            filename: "index_eng.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
             template: Path.resolve(__dirname, '../src/show.html'),
             filename: "show.html",
             inject: "body",
         }),
         new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/show_eng.html'),
+            filename: "show_eng.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
             template: Path.resolve(__dirname, '../src/about.html'),
             filename: "about.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/about_eng.html'),
+            filename: "about_eng.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/contacts.html'),
+            filename: "contacts.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/contacts_eng.html'),
+            filename: "contacts_eng.html",
             inject: "body",
         }),
         // new webpack.ProvidePlugin({
